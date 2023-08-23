@@ -31,6 +31,7 @@ function Carousel({ photos, title }) {
     setCurrCardIdx(currCardIdx - 1);
   }
 
+  // CSS: display none
   return (
     <div className="Carousel">
       <h1>{title}</h1>

@@ -109,7 +109,12 @@ it("hides arrows at the beginning/end of carousel", function () {
   expect(leftArrow).toBeInTheDocument();
   expect(rightArrow).toBeInTheDocument();
 
+
   fireEvent.click(rightArrow);
   expect(container.querySelector(".bi-arrow-right-circle")).toEqual(null);
+  expect(container.querySelector(".bi-arrow-right-circle")).not.toBeInTheDocument();
   expect(leftArrow).toBeInTheDocument();
 });
+
+// TODO: explain test flow in comments
+// global constant for selector string
