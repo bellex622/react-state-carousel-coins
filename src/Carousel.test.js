@@ -89,7 +89,7 @@ it("works when you click on the left arrow", function () {
     container.querySelector(img2Class)
   ).not.toBeInTheDocument();
   expect(
-    container.querySelector('img[alt="testing image 3"]')
+    container.querySelector(img3Class)
   ).not.toBeInTheDocument();
 
 });
